@@ -1,5 +1,8 @@
 const nukat = require('./nukta.json')
 
+/** Number of total jokes available */
+const count = nukat.length
+
 /**
  * Search for jokes
  * @param {RegExp} pattern Regular expression to look for
@@ -31,6 +34,7 @@ const filterByTag = (tag) => {
 
 module.exports = {
   nukat,
+  count,
   search,
   filterByLang,
   filterByTag,
