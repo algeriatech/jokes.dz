@@ -1,6 +1,10 @@
 # Jokes.dz
 > الجزايريين زهوانيين يحبو يضحكو
 
+[![Slack Status](http://algeriatech.now.sh/badge.svg)](http://algeriatech.now.sh)
+[![npm](https://img.shields.io/npm/v/jokes.dz.svg?style=flat-square)](https://www.npmjs.com/package/jokes.dz)
+[![npm](https://img.shields.io/npm/dm/jokes.dz.svg?style=flat-square)](https://www.npmjs.com/package/jokes.dz)
+
 ## Getting started
 Install:  
 `yarn add jokes.dz` or `npm i --save jokes.dz`
