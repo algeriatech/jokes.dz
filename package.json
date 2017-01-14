@@ -1,18 +1,18 @@
 {
-  "name": "nukta.dz",
+  "name": "jokes.dz",
   "version": "0.1.0",
   "description": "A collection of DZ jokes",
-  "main": "nukat.js",
+  "main": "jokes.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/algeriatech/nukta.dz.git"
+    "url": "git+ssh://git@github.com/algeriatech/jokes.dz.git"
   },
   "author": "Ayman Nedjmeddine <theycallmethedr@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/algeriatech/nukta.dz/issues"
+    "url": "https://github.com/algeriatech/jokes.dz/issues"
   },
-  "homepage": "https://github.com/algeriatech/nukta.dz#readme",
+  "homepage": "https://github.com/algeriatech/jokes.dz#readme",
   "keywords": [
     "jokes",
     "dz",

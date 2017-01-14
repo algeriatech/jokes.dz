@@ -1,34 +1,37 @@
-# Nukta
+# Jokes.dz
 > الجزايريين زهوانيين يحبو يضحكو
 
 ## Getting started
 Install:  
-`yarn add nukta.dz` or `npm i --save nukta.dz`
+`yarn add jokes.dz` or `npm i --save jokes.dz`
 
 Start using:  
 ```js
-const nukta = require('nukta.dz')
+const nukat = require('jokes.dz')
 
-console.log(`We have ${nukta.count} jokes available for you! ashba3 da7k ;P`)
+console.log(`We have ${nukat.count} jokes available for you! ashba3 da7k ;P`)
 
-// Set all jokes
-console.log(nukta.nukat)
+// Get all jokes
+console.log(nukat.all)
+
+// or just a random one
+console.log(nukat.random())
 
 // Find all jokes using a regular expression
-console.log(nukta.search('sellal'))
-console.log(nukta.search(/fakakir|ber(ou|w)ita/))
+console.log(nukat.search('m.l\s5tah|s[3e]1IeL'))
+console.log(nukat.search(/fakakir|ber(ou|w)ita/))
 
 // Filter all jokes in french language. If not argument is specified it defaults to 'ar'
-console.log(nukta.filterByLang('fr'))
+console.log(nukat.filterByLang('fr'))
 
 // Filter by tags. Accepts an Array or comma separated string of tags
-console.log(nukta.filterByTag('education,fakakir'))
-console.log(nukta.filterByTag([ 'education', 'fakakir' ]))
+console.log(nukat.filterByTag('education,fakakir'))
+console.log(nukat.filterByTag([ 'education', 'fakakir' ]))
 ```
 
 
 ## عندي نكتة!
-ابعبتلنا نضحكو معاك :joy:
+ابعتلنا نضحكو معاك :joy:
 
 Joke template:
 ```json
@@ -36,9 +39,9 @@ Joke template:
     "lang": "ar",
     "joke": "قالك واحد السيد.....",
     "img": "https://link.to/img.jpg",
-    "tags": "قراية،صوارد،طراطق"
+    "tags": [ "قراية", "صوارد", "طراطق" ]
 }
 ```
 
 - - -
-Made with 💕 by [these fun contributors](https://github.com/algeriatech/nukta.dz/graphs/contributors)
+Made with 💕 by [these fun contributors](https://github.com/algeriatech/jokes.dz/graphs/contributors)

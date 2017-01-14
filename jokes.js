@@ -1,19 +1,22 @@
-const nukat = require('./nukta.json')
+const jokes = require('./jokes.json')
 
 /** Number of total jokes available */
-const count = nukat.length
+const count = jokes.length
+
+/** Get a random joke */
+const random = () => jokes[Math.floor(Math.random() * 10e3) % jokes.length]
 
 /**
  * Search for jokes
  * @param {RegExp} pattern Regular expression to look for
  */
-const search = (pattern) => nukat.filter(joke => new RegExp(pattern).test(joke.joke))
+const search = (pattern) => jokes.filter(joke => new RegExp(pattern).test(joke.joke))
 
 /**
  * Search for jokes in a specific language
  * @param {string} lang language
  */
-const filterByLang = (lang = 'ar') => nukat.filter(joke => joke.lang === lang)
+const filterByLang = (lang = 'ar') => jokes.filter(joke => joke.lang === lang)
 
 /**
  * Search for jokes with some specific tags
@@ -28,13 +31,14 @@ const filterByTag = (tag) => {
   else
     throw new TypeError('Expected string|Array<string>')
 
-  return nukat.filter(joke => new RegExp(tag).test(joke.tags))
+  return jokes.filter(joke => new RegExp(tag).test(joke.tags.join(' ')))
 }
 
 
 module.exports = {
-  nukat,
   count,
+  all: jokes,
+  random,
   search,
   filterByLang,
   filterByTag,
