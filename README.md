@@ -48,4 +48,5 @@ Joke template:
 ```
 
 - - -
-Made with 💕 by [these fun contributors](https://github.com/algeriatech/jokes.dz/graphs/contributors)
+
+[![forthebadge](http://forthebadge.com/badges/built-with-love.svg)](https://github.com/algeriatech/jokes.dz/graphs/contributors)
